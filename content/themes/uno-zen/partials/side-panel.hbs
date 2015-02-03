@@ -1,0 +1,46 @@
+<header class="panel-cover {{#if post}}panel-cover--collapsed{{/if}}" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="{{@blog.url}}/#open" title=""><img src="http://i.imgur.com/F4L0DfW.jpg" width="80" alt="quannh fuckerface" class="panel-cover__logo logo hvr-buzz-out"></a>
+        {{#if @blog.logo}}
+        <a href="/#open" title="{{@blog.title}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo hvr-buzz-out" /></a>
+        {{/if}}
+        <h1 class="panel-cover__title panel-title"><a href="/#open" title="{{@blog.title}}">Quân Nguyễn</a></h1>
+        <hr class="panel-cover__divider" />
+        {{!-- <span class="panel-cover__subtitle panel-subtitle">Human yet</span> --}}
+        <p class="panel-cover__description">Information System Engineer</p>
+        <p class="panel-cover__description">Mobile Developer @Framgia VietNam</p>
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">{{@blog.description}}</p>
+
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+
+          <form id="search">
+            <i class="icon icon-search"></i>
+            <input type="text", name="search", placeholder="" id="search-field" />
+            <hr class="panel-cover__divider panel-cover__divider--secondary" />
+          </form>
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="http://quannh.is" title="link to website of quannh" class="blog-button">Website</a></li>
+              <li class="navigation__item"><a href="/#open" title="link to {{@blog.title}} blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          {{> social}}
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>

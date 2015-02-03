@@ -1,0 +1,119 @@
+// ------------------------------
+// SINGLE POST LAYOUT
+// ------------------------------
+
+.post-comments {
+  padding: 60px 0;
+  border-top: 1px solid $gray-light;
+  }
+
+// ------------------------------
+// SINGLE POST METAß
+// ------------------------------
+
+.post-meta {
+  color: darken($gray, 2%);
+  text-align: center;
+  }
+
+.post-meta__author {
+  margin-left: 1.5em;
+  }
+
+.post-meta__avatar {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin: 0 .3em .4em 0;
+  border: none;
+  box-shadow:none;
+  }
+
+.post-meta__date,
+.post-meta__read {
+  font-size: .85rem;
+  }
+
+// ------------------------------
+// SINGLE POST STYLES
+// ------------------------------
+
+.post {
+  a:not([data-reactid]) {
+    padding: 1px;
+    border-bottom: 1px solid lighten($secondary-color, 25%);
+    &:hover {
+      border-bottom: 1px solid darken($primary-color, 20%);
+      }
+    }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: $border-radius;
+    }
+  pre {
+    width: 95%;
+    }
+  hr {
+    display: block;
+    width: 30%;
+    margin: 2em 0;
+    border-top: 1px solid $gray-light;
+    }
+  }
+
+// ------------------------------
+// POST LIST
+// ------------------------------
+
+.post-list {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  list-style-type: none;
+  li {
+    margin: 0 0 2.2em 0;
+    &:last-child {
+      hr {
+        display: none;
+        }
+      }
+    }
+  }
+
+.post-list__post-title {
+  margin-top: 0;
+  margin-bottom: .2em;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  //     a {
+  //   color: $gray-darkest;
+  //       &:hover {
+  //   color: $hover-color;
+  //
+  // }
+  // }
+  }
+
+.post-list__meta {
+  display: block;
+  margin: .7em 0 0 0;
+  font-size: .9em;
+  color: darken($gray, 2%);
+  }
+.post-list__meta--date {
+  color: darken($gray, 2%);
+  }
+
+.post-list__divider {
+  width: 30%;
+  margin: 2.2em 0 2.1em 0;
+  border-top: 1px solid $gray-light;
+  }
+
+.post-button {
+  position: absolute;
+  left: 0;
+  top: 30px;
+}
